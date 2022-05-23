@@ -56,9 +56,10 @@ section {
     flex-direction: column;
     margin-top: 5px;
     width: 200px;
-    background-color: royalblue;
+    background-color: #b61717;
     border-radius: 15px;
-    color: #b61717;
+    color: azure;
+    font-weight: 400;
 }
 .info >label {
     margin: 10px auto;
