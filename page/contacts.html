@@ -26,7 +26,6 @@
                             <li class="li"><a href="../index.html">მთავარი</a></li>
                             <li class="li"><a href="">მარშუტები</a></li>
                             <li class="li"><a href="contacts.html">რეგისტრაცია</a></li>
-                            <li class="li"><a href="">ბლოგები</a></li>
                             <li class="li"><a href="">ჩვენს შესახებ</a></li>
                         </ul>
                     </nav>
@@ -40,20 +39,31 @@
         <!--header end-->
         <!--section 1-->
         <section>
+            <div class="auth">
+                <form class="sign-in-form" method="POST">
+                    <div class="sign-in-info">
+                        <input class="sign-in-input" type="text" name="username" id="username" placeholder="მომხმარებელი" > 
+                    </div>
+                    <div class="sign-in-info">
+                        <input class="sign-in-input" type="password" name="password" id="password" placeholder="პაროლი">
+                    </div>
+                    <div>
+                        <input class="sign-in-submit" type="submit" value="sign in">
+                    </div>
+                </form>
+            </div>
             <div class="contact-container">
                 <h4>რეგისტრაცია</h4>
                 <h2>შექმენი საკუთარი პროფილი</h2>
                 <div class="container">
                     <form class="form" action="" method="post">
-                        <div class="left-block">
-                            <textarea name="decription" id="decription" placeholder="თქვენს სესახებ;"></textarea>
-                        </div>
-                        <div class="right-block">
-                            <input type="text" placeholder="მისამართი" name="სახელი" id="subject" required>
+                        <input type="text" placeholder="მომხმარებელი" name="name-surname" id="name-surname" required>
                             <input type="text" placeholder="სახელი / გვარი" name="name-surname" id="name-surname" required>
-                            <input type="email" placeholder="Email" name="email" id="email" required>
-                            <input type="submit" value="Send">
-                        </div>
+                            <input type="email" placeholder="ელექტრონული ფოსტა" name="email" id="email" required>
+                            <input type="password" placeholder="პაროლი" name="password" id="password" required>
+                            <input type="password" placeholder="გაიმეორეთ პაროლი" name="password" id="password" required>
+                            <input type="number" placeholder="მობილური" name="number" id="number" required>
+                            <input class="button" type="submit" value="Send">
                     </form>
                 </div>
             </div>
